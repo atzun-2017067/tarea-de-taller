@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Tarea 1</title>
+
+  <link rel="shortcut icon"
+    href="data:image/png;base64,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">
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>
+              MIS GUSTOS
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Mis Gustos <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="biografia.html">Biografía </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kinal.html">KINAL </a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="videojuegos.html"> Videojuegos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="musica.html"> Música </a>
+                </li> -->
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+                </li> -->
+              </ul>
+            </div>
+            <!-- <div class="quote_btn-container  d-flex justify-content-center">
+              <a href="">
+                <img src="images/call.png" alt="">
+                CALL : +502 12345678
+              </a>
+              <a href="">
+                <span>
+                  @
+                </span>
+                misgustos@gmail.com
+              </a>
+            </div> -->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <!-- <section class=" slider_section position-relative">
+
+      <div class="slider_bg-container">
+
+      </div>
+      <div class="slider-container">
+
+        <div class="detail-box">
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="sr-only">Next</span>
+          </a>
+          <h1>
+            Anthony <br>
+            Acabal <br>
+            IN6BM
+          </h1>
+          <p>
+            En esta página hablaré un poco sobre mis gustos.
+          </p>
+          <div>
+            <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1674484297&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3d050106c4-584e-f72e-1d6f-d907e2a27607&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015"
+              class="slider-link">
+              CONTACTO
+            </a>
+          </div>
+        </div>
+        <div class="img-box">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/slider-img.jpg" alt="Not Found">
+              </div>
+              <div class="carousel-item">
+                <img id="carrusel"
+                  src="https://img.freepik.com/foto-gratis/balon-futbol-linea-blanca-estadio_1150-5285.jpg?w=2000"
+                  alt="Not Found">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section> -->
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h6>
+              Sobre Mí
+            </h6>
+            <div class="custom_heading-container">
+              <h2>
+                Fútbol
+              </h2>
+              <hr>
+            </div>
+            <p>
+              A partir de los 8 años comencé a tener interes por dicho deporte, conforme pasaba el tiempo
+              comencé
+              a practicarlo constantemente, este deporte me gusta porque dentro de la cancha hay miles de
+              sentimientos
+              encontrados, pues el fútbol es un deporte apasionante desde que inicia un partido hasta que
+              finaliza, a lo largo de mi juventud
+              la práctiba en mis tiempos libres e incluso dentro del colegio, pues hacian torneos de dicho
+              deporte en el cual en la mayoría de
+              ocasiones participe.
+            </p>
+            <div>
+              <a href="https://es.wikipedia.org/wiki/F%C3%BAtbol">
+                Más sobre Fútbol
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img
+              src="https://img.freepik.com/vector-premium/logotipo-futbol-boot-patea-pelota-ilustracion-vectorial_183342-393.jpg?w=2000"
+              alt="Not Found">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- end about section -->
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="d-flex flex-column align-items-end">
+        <div class="custom_heading-container">
+          <hr>
+          <h2>
+            Lectura
+          </h2>
+
+        </div>
+        <p>
+          En el caso de la lectura, se me fue impuesta desde muy temprana edad, esto debido a que en la
+          institución donde estaba estudiando nos pedían leer, era costumbre leer 3 libros por año de
+          aproximadamente 300 páginas por libro, eventualmente algo que en su momento veía tedioso y a la
+          vez aburrido se convirtió en un hábito, el cual en la actualidad aún lo sigo haciendo aunque con
+          menor frecuencia, esto debido a la exigencia en cuanto al estudio.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="service_container layout_padding2">
+        <a href="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/ElPrincipito.pdf">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s-1.png" alt="" class="img-1">
+              <img src="images/s1-blue.png" alt="" class="img-2">
+            </div>
+            <div class="name">
+              <h6>
+                El principito
+              </h6>
+            </div>
+          </div>
+        </a>
+        <a href="https://data.ecasals.net/pdf/24/9788483431696_L33_24.pdf">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s-1.png" alt="" class="img-1">
+              <img src="images/s1-blue.png" alt="" class="img-2">
+            </div>
+            <div class="name">
+              <h6>
+                La cala del muerto
+              </h6>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.argentina.gob.ar/sites/default/files/stevenson_robert_louis_-_el_diablo_de_la_botella.pdf">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s-1.png" alt="" class="img-1">
+              <img src="images/s1-blue.png" alt="" class="img-2">
+            </div>
+            <div class="name">
+              <h6>
+                El diablo de la botella
+              </h6>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.iesdonbosco.com/data/lengua/cuando_hitler_robo_el_conejo_rosa._judith_kerr.pdf">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s-1.png" alt="" class="img-1">
+              <img src="images/s1-blue.png" alt="" class="img-2">
+            </div>
+            <div class="name">
+              <h6>
+                Cuando Hitler robó el conejo rosa
+              </h6>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="read-btn">
+      <a href="https://es.wikipedia.org/wiki/Lectura_(educaci%C3%B3n)">
+        Más información sobre Lectura
+      </a>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+  <!-- portfolio section -->
+
+  <section class="portfolio_section layout_padding">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>
+          Videojuegos
+        </h2>
+        <hr>
+      </div>
+      <p>
+        Esta vez comencé desde los 14 años de edad a interesarme demasiado por los videojuegos, pues
+        cuando
+        llegaba de estudiar lo primero que hacía después de almorzar era jugar videojuegos por unas
+        horas,
+        aunque en algunas ocasiones no me era posible debido a la exigencia de la institución en la cual
+        en
+        ese entonces me encontraba, debido a las tareas mi tiempo de entretenimiento se veía redicido, a
+        esto
+        le dedico alrededor de 2 horas por día.
+      </p>
+      <div class="layout_padding2-top">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="img-box">
+              <img src="https://prod.assets.earlygamecdn.com/images/warzone-2-release-date.jpg?mtime=1643176468" alt="">
+              <a href="https://www.callofduty.com/warzone">
+                <img src="images/link.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="img-box">
+              <img src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/8jHGChKiNVguguezuyE35X2n.png"
+                alt="">
+              <a href="https://store.steampowered.com/agecheck/app/1593500/">
+                <img src="images/link.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="img-box">
+              <img src="https://www.gamespot.com/a/uploads/original/1406/14063904/3058046-3418235447-THUMB.jpg" alt="">
+              <a href="https://www.playstation.com/en-us/games/uncharted-4-a-thiefs-end/">
+                <img src="images/link.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end portfolio section -->
+  <!-- news section -->
+
+  <section class="news_section layout_padding">
+    <div class="container">
+      <div class="d-flex flex-column align-items-end">
+        <div class="custom_heading-container">
+          <hr>
+          <h2>
+            Música
+          </h2>
+
+        </div>
+        <p>
+          Desde los 14 años la mayoría del tiempo me encontraba escuchando música, mientras hacía alguna actividad,
+          jugaba videojuegos e incluso
+          mientras hacía mis deberes, esto con el tiempo se volvió un hábito, pues no podía realizar alguna actividad
+          sin tener que escuchar alguna canción.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box">
+            <div class="img-box">
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/8d/97/f4/8d97f427-2d17-1a51-1714-324483eb5fc1/886443546264.jpg/1200x1200bf-60.jpg"
+                alt="Not Found">
+            </div>
+            <div class="action-box">
+              <div class="action">
+                <a href="">
+                  <img src="images/like.png" alt="">
+                </a>
+                <a href="">
+                  <img src="images/comment.png" alt="">
+                </a>
+                <a href="">
+                  <img src="images/share.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <h4>
+                Michael Jackson
+              </h4>
+              <p>
+                Fue un cantante, compositor, bailarín y filántropo estadounidense. Apodado el " Rey del Pop ", es
+                considerado una de las figuras culturales más significativas del siglo XX .
+              </p>
+              <div>
+                <a href="https://en.wikipedia.org/wiki/Michael_Jackson">
+                  Más información
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="https://i.scdn.co/image/ab67616d0000b2738b52c6b9bc4e43d873869699" alt="Not Found">
+            </div>
+            <div class="action-box">
+              <div class="action">
+                <a href="">
+                  <img src="images/like.png" alt="">
+                </a>
+                <a href="">
+                  <img src="images/comment.png" alt="">
+                </a>
+                <a href="">
+                  <img src="images/share.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <h4>
+                Kendrick Lamar
+              </h4>
+              <p>
+                Es un rapero y compositor estadounidense. Conocido por sus estilos musicales progresivos y sus
+                composiciones con conciencia social.
+              </p>
+              <div>
+                <a href="https://en.wikipedia.org/wiki/Kendrick_Lamar">
+                  Más información
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box">
+            <div class="img-box">
+              <img
+                src="https://images.complex.com/complex/image/upload/c_fill,dpr_auto,f_auto,fl_lossy,g_face,q_auto,w_1280/f8jy7mqtynfo5b2pwlf6.jpg"
+                alt="Not Found">
+            </div>
+            <div class="action-box">
+              <div class="action">
+                <a href="">
+                  <img src="images/like.png" alt="">
+                </a>
+                <a href="">
+                  <img src="images/comment.png" alt="">
+                </a>
+                <a href="">
+                  <img src="images/share.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="detail-box">
+              <h4>
+                Drake
+              </h4>
+              <p>
+                Una figura influyente en la música popular contemporánea, Drake
+                ha sido acreditado por popularizar el canto y la sensibilidad del R&B en el hip hop.
+              </p>
+              <div>
+                <a href="https://en.wikipedia.org/wiki/Drake_(musician)">
+                  Más información
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end news section -->
+
+  <!-- subscribe section -->
+
+  <!-- <section class="subscribe_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>
+            subscribe our <br>
+            <span>
+              Newsletter
+            </span>
+          </h2>
+        </div>
+        <div class="col-md-8">
+          <form action="">
+            <input type="text" placeholder="Enter your email">
+            <button>
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- end subscribe section -->
+
+  <!-- client section -->
+
+  <!-- <section class="client_section layout_padding">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>
+          What is Say Our Clients
+        </h2>
+        <hr>
+      </div>
+      <div class="client_container layout_padding-top">
+        <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="box">
+                <div class="detail-box">
+                  <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of
+                    letters, It is a long established fact that a reader will be distracted by the readable content of a
+                    page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters,
+                  </p>
+                </div>
+                <div class="client-id">
+                  <div class="img-box">
+                    <img src="images/client.png" alt="">
+                  </div>
+                  <div class="name">
+                    <h5>
+                      readable content
+                    </h5>
+                    <h6>
+                      designer
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of
+                    letters, It is a long established fact that a reader will be distracted by the readable content of a
+                    page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters,
+                  </p>
+                </div>
+                <div class="client-id">
+                  <div class="img-box">
+                    <img src="images/client.png" alt="">
+                  </div>
+                  <div class="name">
+                    <h5>
+                      readable content
+                    </h5>
+                    <h6>
+                      designer
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of
+                    letters, It is a long established fact that a reader will be distracted by the readable content of a
+                    page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters,
+                  </p>
+                </div>
+                <div class="client-id">
+                  <div class="img-box">
+                    <img src="images/client.png" alt="">
+                  </div>
+                  <div class="name">
+                    <h5>
+                      readable content
+                    </h5>
+                    <h6>
+                      designer
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+  <!-- end client section -->
+
+  <!-- contact section -->
+
+  <!-- <section class="contact_section layout_padding-bottom">
+    <div class="container">
+      <div class="d-flex flex-column align-items-end">
+        <div class="custom_heading-container">
+          <hr>
+          <h2>
+            Contact Us
+          </h2>
+        </div>
+      </div>
+      <div class="layout_padding-top layout_padding2-bottom">
+        <div class="row">
+          <div class="col-md-7">
+            <form action="">
+              <div class="contact_form-container">
+                <div>
+                  <div>
+                    <input type="text" placeholder="Name">
+                  </div>
+                  <div>
+                    <input type="email" placeholder="Email">
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Phone Number">
+                  </div>
+                  <div class="">
+                    <input type="text" placeholder="Message" class="message_input">
+                  </div>
+                  <div class="mt-5">
+                    <button type="submit">
+                      send
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+          <div class="col-md-5">
+            <div class="map-box">
+              <div id="map">
+                <div class="map-responsive">
+                  <iframe
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
+                    width="600" height="300" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact_items">
+
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-2">
+
+            </div>
+            <div class="detail-box">
+              <p>
+                +02 1234567890
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-3">
+
+            </div>
+            <div class="detail-box">
+              <p>
+                demo@gmail.com
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-1">
+
+            </div>
+            <div class="detail-box">
+              <p>
+                t will be distracted by the readable
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+
+  <!-- end contact section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="info_social">
+        <div>
+          <a href="https://es-la.facebook.com/login/device-based/regular/login/">
+            <img src="images/fb.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">
+            <img src="images/twitter.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/login/es?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin">
+            <img src="images/linkedin.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/">
+            <img src="images/insta.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div>
+        <p>
+          Todos los derechos reservados &copy; 2023 - Anthony Acabal - IN6BM
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+</body>
+
+</html>
